@@ -9,12 +9,14 @@ import ContainerOne from "./containers/ContainerOne";
 import SkillCard from "./components/SkillCard";
 import IntroRight from "./components/IntroRight";
 import Test from "./components/Test";
+import ClassOneOnState from "./components/classOneOnState";
 
 createRoot(document.getElementById("root")).render(
   <div>
     <NavBar />
-    <ContainerOne />
-    <div className="flex gap-4">
+    <ClassOneOnState/>
+    {/* <ContainerOne /> */}
+    {/* <div className="flex gap-4">
       <SkillCard
         skillName={"Tailwind CSS"}
         imgSrc={
@@ -33,10 +35,10 @@ createRoot(document.getElementById("root")).render(
           "https://udaykumar.life/static/media/SwaggerLogo.afd1bfb8320b5e8ca2ce.png"
         }
       />
-    </div>
+    </div> */}
     {/* <IntroRight /> */}
     <div>
-      <Test/>
+      {/* <Test/> */}
     </div>
   </div>
 );
