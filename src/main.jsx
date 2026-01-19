@@ -10,11 +10,13 @@ import SkillCard from "./components/SkillCard";
 import IntroRight from "./components/IntroRight";
 import Test from "./components/Test";
 import ClassOneOnState from "./components/classOneOnState";
+import Recipes from "./components/Recipes";
 
 createRoot(document.getElementById("root")).render(
   <div>
     <NavBar />
-    <ClassOneOnState/>
+    {/* <ClassOneOnState/> */}
+    <Recipes/>
     {/* <ContainerOne /> */}
     {/* <div className="flex gap-4">
       <SkillCard
