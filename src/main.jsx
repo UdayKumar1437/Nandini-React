@@ -11,12 +11,18 @@ import IntroRight from "./components/IntroRight";
 import Test from "./components/Test";
 import ClassOneOnState from "./components/classOneOnState";
 import Recipes from "./components/Recipes";
+import Carts from "./components/Carts";
+import VsCode from "./components/VsCode";
 
 createRoot(document.getElementById("root")).render(
   <div>
     <NavBar />
+    <div className="flex justify-center">
+      <VsCode/>
+    </div>
     {/* <ClassOneOnState/> */}
-    <Recipes/>
+    {/* <Recipes/> */}
+    {/* <Carts/> */}
     {/* <ContainerOne /> */}
     {/* <div className="flex gap-4">
       <SkillCard
