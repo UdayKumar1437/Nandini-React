@@ -1,9 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import NavBar from '../components/NavBar'
 
 const AboutPage = () => {
   return (
-    <div>AboutPage
+    <div>
+      {/* <NavBar/> */}
+      AboutPage
 
 
        <Link to={"/"}><button className='border p-2 cursor-pointer'>Home Page</button></Link>

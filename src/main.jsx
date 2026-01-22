@@ -6,24 +6,45 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import IntroRight from "./components/IntroRight";
+import BaseLayout from "./Layouts/BaseLayout";
+import RecipeCard from "./components/RecipeCard";
+import SecondLayout from "./Layouts/SecondLayout";
+import YouTubeLayout from "./Layouts/YouTubeLayout";
 
 const router = createBrowserRouter([
   {
-    path:"/",
-    element:<HomePage/>
+    path: "/",
+    element: <YouTubeLayout />,
+    children: [
+      {
+        path: "/",
+        element: <HomePage />,
+      },
+      {
+        path: "/about",
+        element: <AboutPage />,
+      },
+      {
+        path: "/contact",
+        element: <ContactPage />,
+      },
+    ],
   },
   {
-    path:"/about",
-    element:<AboutPage/>
+    path: "/nandini",
+    element: <YouTubeLayout />,
+    children:[
+      {
+        path:"",
+        element:<IntroRight/>
+      }
+    ]
   },
   {
-    path:"/contact",
-    element:<ContactPage/>
+    path: "/uday",
+    element: <SecondLayout />,
+    children: [{ path: "nandini" ,element:<h1>Nandini</h1>}],
   },
-  {
-    path:"/nandini",
-    element:<IntroRight/>
-  }
 ]);
 
 createRoot(document.getElementById("root")).render(
